@@ -5,151 +5,143 @@
         <title>Mi revista digital </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <style>
-
-        </style>
-
     </head>
 
-<body class="cuerpo">
-    <nav class="navegador">
-        <div><a href="revista1.html">Inicio</a></div>
-        <div><a href="#noticias">Noticias</a></div>
-        <div><a href="#blog">Blog</a></div>
-        <div><a href="contactos.html">Contactos</a></div>
-        <div><a href="configuracion.html">Configuracion</a></div>
-    </nav>
+    <body class="cuerpo">
+        <main>
+            <nav class="navegador">
+                <div><a href="revista1.html">Inicio</a></div>
+                <div><a href="#noticias">Noticias</a></div>
+                <div><a href="#blog">Blog</a></div>
+                <div><a href="contactos.html">Contactos</a></div>
+                <div><a href="configuracion.html">Configuracion</a></div>
+            </nav>
 
-    <h2 class="titulo21">FORMULARIO DE REGISTRO</h2>
+            <h2 class="titulo21">FORMULARIO DE REGISTRO</h2>
 
-      <section id="perfil">
-            <form class="contenedor1">
-                
-                <div class="elemento ele-22">
-                    <label  for="foto perfil">Foto:</label>
-                    <input class="botonCualquiera" type="file" id="foto perfil" name="foto perfil" accept=".jpg, .png">
-                </div>
+            <section id="perfil">
 
-                <div class="elemento ele-23">
-                    <label for="nacimiento">Fecha de nacimiento:</label>
-                    <input class="botonCualquiera" type="date" id="nacimiento" name="nacimiento">
-                </div>
+                    <form class="contenedor1">
+                        <div class="elemento ele-22">
+                            <label  for="foto perfil">Foto:</label>
+                            <input class="botonCualquiera" type="file" id="foto perfil" name="foto perfil" accept=".jpg, .png">
+                        </div>
 
-                <div class="elemento ele-24">
-                    <label>Genero:</label>
-                    <label for="masculino">Masculino</label>
-                    <input class="botonCualquiera" type="radio" id="masculino" name="genero" value="hombre" checked>
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" id="femenino" name="genero" value="mujer" checked>
-                </div>
+                        <div class="elemento ele-23">
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <input class="botonCualquiera" type="date" id="nacimiento" name="nacimiento">
+                        </div>
 
-                <div class="elemento ele-25">
-                    <label for="color">Color:</label>
-                    <input class="botonCualquiera" type="color" id="colores" name="color" value="#58A03F">    
-                </div>
- 
- 
-            </form>
+                        <div class="elemento ele-24">
+                            <label>Genero:</label>
+                            <label for="masculino">Masculino</label>
+                            <input class="botonCualquiera" type="radio" id="masculino" name="genero" value="hombre" checked>
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" id="femenino" name="genero" value="mujer" checked>
+                        </div>
 
-        </section>
+                        <div class="elemento ele-25">
+                            <label for="color">Color:</label>
+                            <input class="botonCualquiera" type="color" id="colores" name="color" value="#58A03F">    
+                        </div>
+                    </form>
 
-        <section id="clave">
-            <form class="contenedor1">
-                <div class="elemento ele-26">
-                    <label for="nombre">Nombre:</label>
-                    <input 
-                    type="text"
-                    id="nombreUsuario"
-                    placeholder="Nombre"
-                    value=""
-                    required
-                    >
-                </div>
+            </section>
 
-                <div class="elemento ele-27">
-                     <label for="passVieja">Contraseña vieja:</label>
-                    <input type="password" id="pass" name="pass" minlength="10" required>
-                </div>
+            <section id="clave">
 
-                <div class="elemento ele-28">
-                     <label for="passNueva">Contraseña nueva:</label>
-                    <input type="password" id="passNueva" name="passNueva" minlength="10" required>
-                </div>
+                <form class="contenedor1">
+                    <div class="elemento ele-26">
+                        <label for="nombre">Nombre:</label>
+                        <input 
+                        type="text"
+                        id="nombreUsuario"
+                        placeholder="Nombre"
+                        value=""
+                        required
+                        >
+                    </div>
 
-                <div class="elemento ele-29">
-                     <button class="botonCualquiera2">Guardar</button>
-                </div>
-                    
-            </form>
-        </section>
+                    <div class="elemento ele-27">
+                        <label for="passVieja">Contraseña vieja:</label>
+                        <input type="password" id="pass" name="pass" minlength="10" required>
+                    </div>
 
+                    <div class="elemento ele-28">
+                        <label for="passNueva">Contraseña nueva:</label>
+                        <input type="password" id="passNueva" name="passNueva" minlength="10" required>
+                    </div>
 
-    <h1 class="titulo11">USUARIOS REGISTRADOS</h1>
-    
-    <div class="tabla-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Foto de perfil</th>
-                    <th>Correo</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Cedula</th>
-                    <th>Fecha de nacimiento</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img class="imagenGrande" src="img/coco.jpg" width="150" height="100"></td>
-                    <td>OscarCoco@gmail.com</td>
-                    <td>Oscar</td>
-                    <td>Montona</td>
-                    <td>30987123</td>
-                    <td>12/01/05</td>
-                </tr>
-                <tr>
-                    <td><img class="imagenGrande" src="img/foto1.jpg" width="150" height="100"></td>
-                    <td>Mnediosasato@gmail.com</td>
-                    <td>Mendiosa</td>
-                    <td>Sato</td>
-                    <td>11944003</td>
-                    <td>22/02/10</td>
-                </tr>
-
-                <tr>
-                    <td><img class="imagenGrande" src="img/foto2.jpg" width="150" height="100"></td>
-                    <td>Portufal435@gmail.com</td>
-                    <td>Pedro</td>
-                    <td>Antonimo</td>
-                    <td>31123543</td>
-                    <td>09/03/15</td>
-                </tr>
-
-                <tr>
-                    <td><img class="imagenGrande" src="img/foto3.jpg" width="150" height="100"></td>
-                    <td>Oswal432@gmail.com</td>
-                    <td>Oswall</td>
-                    <td>Marcos</td>
-                    <td>30942141</td>
-                    <td>01/04/20</td>
-                </tr>
-
-                <tr>
-                    <td><img class="imagenGrande" src="img/foto4.jpg" width="150" height="100"></td>
-                    <td>Mantecadocho54@gmail.com</td>
-                    <td>Raul</td>
-                    <td>Marton</td>
-                    <td>30327123</td>
-                    <td>10/05/22</td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
+                    <div class="elemento ele-29">
+                        <button class="botonCualquiera2">Guardar</button>
+                    </div>
+                        
+                </form>
+            </section>
 
 
-        <button class="botonChat">CHAT</button>
+            <h1 class="titulo11">USUARIOS REGISTRADOS</h1>
+            
+            <div class="tabla-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Foto de perfil</th>
+                            <th>Correo</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cedula</th>
+                            <th>Fecha de nacimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img class="imagenGrande" src="img/coco.jpg" width="150" height="100"></td>
+                            <td>OscarCoco@gmail.com</td>
+                            <td>Oscar</td>
+                            <td>Montona</td>
+                            <td>30987123</td>
+                            <td>12/01/05</td>
+                        </tr>
+                        <tr>
+                            <td><img class="imagenGrande" src="img/foto1.jpg" width="150" height="100"></td>
+                            <td>Mnediosasato@gmail.com</td>
+                            <td>Mendiosa</td>
+                            <td>Sato</td>
+                            <td>11944003</td>
+                            <td>22/02/10</td>
+                        </tr>
 
-    </main>
-</body>
-        
+                        <tr>
+                            <td><img class="imagenGrande" src="img/foto2.jpg" width="150" height="100"></td>
+                            <td>Portufal435@gmail.com</td>
+                            <td>Pedro</td>
+                            <td>Antonimo</td>
+                            <td>31123543</td>
+                            <td>09/03/15</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="imagenGrande" src="img/foto3.jpg" width="150" height="100"></td>
+                            <td>Oswal432@gmail.com</td>
+                            <td>Oswall</td>
+                            <td>Marcos</td>
+                            <td>30942141</td>
+                            <td>01/04/20</td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="imagenGrande" src="img/foto4.jpg" width="150" height="100"></td>
+                            <td>Mantecadocho54@gmail.com</td>
+                            <td>Raul</td>
+                            <td>Marton</td>
+                            <td>30327123</td>
+                            <td>10/05/22</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="botonChat">CHAT</button>
+        </main>
+    </body>
+</html>
