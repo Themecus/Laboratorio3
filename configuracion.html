@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"> 
         <title>Mi revista digital </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <style>
 
@@ -19,10 +20,10 @@
         <div><a href="configuracion.html">Configuracion</a></div>
     </nav>
 
-    <main class="contenedor1 form">
-        <h2 class="titulo21">FORMULARIO DE REGISTRO</h2>
-        <section id="perfil">
-            <form>
+    <h2 class="titulo21">FORMULARIO DE REGISTRO</h2>
+
+      <section id="perfil">
+            <form class="contenedor1">
                 
                 <div class="elemento ele-22">
                     <label  for="foto perfil">Foto:</label>
@@ -53,7 +54,7 @@
         </section>
 
         <section id="clave">
-            <form>
+            <form class="contenedor1">
                 <div class="elemento ele-26">
                     <label for="nombre">Nombre:</label>
                     <input 
@@ -82,10 +83,12 @@
             </form>
         </section>
 
-        <table class="tabla-estilo"> 
 
-            <h2 class="titulo21"><i>USUARIOS REGISTRADOS</i></h2>
-            <thead class="cabezaTabla">
+    <h1 class="titulo11">USUARIOS REGISTRADOS</h1>
+    
+    <div class="tabla-container">
+        <table>
+            <thead>
                 <tr>
                     <th>Foto de perfil</th>
                     <th>Correo</th>
@@ -95,8 +98,7 @@
                     <th>Fecha de nacimiento</th>
                 </tr>
             </thead>
-
-            <tbody class="cuerpoTabla">
+            <tbody>
                 <tr>
                     <td><img class="imagenGrande" src="img/coco.jpg" width="150" height="100"></td>
                     <td>OscarCoco@gmail.com</td>
@@ -105,7 +107,6 @@
                     <td>30987123</td>
                     <td>12/01/05</td>
                 </tr>
-
                 <tr>
                     <td><img class="imagenGrande" src="img/foto1.jpg" width="150" height="100"></td>
                     <td>Mnediosasato@gmail.com</td>
@@ -141,9 +142,10 @@
                     <td>30327123</td>
                     <td>10/05/22</td>
                 </tr>
-            </tbody>
 
+            </tbody>
         </table>
+    </div>
 
 
         <button class="botonChat">CHAT</button>
