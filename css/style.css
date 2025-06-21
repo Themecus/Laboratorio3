@@ -3,7 +3,7 @@
     color: var(--color-black);
     text-align: var(--location-text);
     text-transform: uppercase;
-
+    
     
     border-color:var(--color-black);
     border: var(--size-style-color-border4);
@@ -54,6 +54,16 @@
  margin:var(--magin-value1);
  padding:var(--padding-value);
 }
+
+.titulo11{
+ font-weight:500 ;
+ color:var(--color-black);
+ text-shadow: var(--style-shadow);
+ margin:var(--magin-value1);
+ padding:var(--padding-value);
+ text-align: center;
+}
+
 
 @keyframes animacionPresentacion{
     0%{transform:translate(140px); }
@@ -171,21 +181,60 @@
 .cabezaTabla{
     background-color: var(--color-white-words);
 }
+
 .tabla-estilo {
     margin: 20px auto;
     border: var(--size-style-color-border3);
     border-collapse: collapse;
+    overflow-x: auto;
   }
   
-  .tabla-estilo td {
+.tabla-estilo td {
     border: var(--size-style-color-border3);
     padding: 8px;
     background-color: rgb(249, 229, 173);
-  }
+    overflow-x: auto;
+}
+
+.tabla-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background: white;
+}
+        
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; 
+}
+        
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+        
+th {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+        
+td{
+    background: rgb(243, 193, 57)
+}
+
+
 
 #perfil{
     margin:var(--magin-value1);
     padding:2px;
+
 
  
 }
@@ -193,17 +242,20 @@
 #perfil label{
     margin:var(--magin-value1);
     padding:var(--padding-valu1);
+   
 }
 
 #clave{
     margin:var(--magin-value1);
     padding:var(--padding-valu1);
 
+
 }
 
 #clave label{
     margin:var(--magin-value1);
     padding:var(--padding-valu1);
+    
 }
 
 .formularioBusqueda section{
@@ -266,7 +318,7 @@
     justify-content: var(--location-text);
 }
 
-.contenedor1 form{
+.contenedor1{
     margin: 2px;
     height: 40%;
     display: grid;
@@ -822,32 +874,466 @@ td:hover{
     --mouse-style:pointer
 }
 
+
+
+@media (max-width: 950px)  {
+
+     .cuerpo{
+        background: linear-gradient(to bottom, #c3f377, #7f4e00);
+    }
+
+    .cabeza{
+        background: #84f04a;
+    }
+
+    .navegador{
+        background: #fad25b;
+    }
+
+
+    .contenedor section{
+    margin: 0px;
+    height: 0%;
+    display:grid;
+    grid-template-columns: repeat(5,150px);
+    grid-template-rows: repeat(15,100px);
+    justify-content: var(--location-text);
+    }
+
+    .ele-1{
+    grid-column: 1/3;
+    grid-row: 1/4;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-2{
+    grid-column: 3/6;
+    grid-row: 1/4;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-3{
+    grid-column: 1/3;
+    grid-row: 4/6;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-4{
+    grid-column: 3/6;
+    grid-row: 4/6;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-5{
+    grid-column: 1/3;
+    grid-row: 6/9;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-6{
+    grid-column: 3/6;
+    grid-row: 6/9;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-7{
+    grid-column: 1/3;
+    grid-row: 9/12;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-8{
+    grid-column: 3/6;
+    grid-row: 9/12;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-9{
+    grid-column: 1/3;
+    grid-row: 12/15;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-10{
+    grid-column: 3/6;
+    grid-row: 12/15;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-11{
+    grid-column: 1/3;
+    grid-row: 15/25;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-12{
+    grid-column: 3/6;
+    grid-row: 23/25;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-18{
+    grid-column: 3/6;
+    grid-row: 20/22;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-19{
+    grid-column: 3/6;
+    grid-row: 15/20;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-20{
+    grid-column: 1/6;
+    grid-row: 26/28;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+    .ele-21{
+    grid-column: 3/6;
+    
+    grid-row: 22/23;
+    border: var(--size-style-color-border1);
+    margin: 0px;
+    padding:var(--padding-value);
+    }
+
+
+    .titulo211{
+        transform: translateY(0);
+    }
+
+    .titulo31{
+        transform: translateY(0);
+    }
+
+    .parrafo1{
+        transform: translateY(0);
+    }
+
+    /*------------------------------------------------------------*/
+
+    .contenedor2 form{
+        display: inline;
+        border:none;
+    }
+
+    .ele-33{
+        transform: translateY(0px);
+    }
+    .ele-34{
+        transform: translateY(0px);
+    }
+
+    /*------------------------------------------------------------*/
+
+   .contenedor1{
+    margin: 1px;
+    height: 40%;
+    display: inline;
+    border: none;
+    }
+    
+
+    #perfil{
+    margin:-1px;
+    padding:2px;
+    background: #fbd496;
+    }
+
+
+
+    #clave{
+    margin:-1px;
+    padding:var(--padding-valu1);
+    background: #fbd496;
+    }
+
+    .ele-22{
+        transform: translateY(20px);
+    }
+
+    .ele-23{
+        transform: translateY(20px);
+    }
+
+    .ele-24{
+        transform: translateY(20px);
+    }
+
+    .ele-25{
+        transform: translateY(20px);
+    }
+
+    .ele-26{
+        transform: translateY(-20px);
+    }
+
+    .ele-27{
+        transform: translateY(-20px);
+    }
+
+    .ele-28{
+        transform: translateY(-20px);
+    }
+
+    .ele-29{
+        transform: translateY(-20px);
+    }
+
+    .botonCualquiera2{
+        transform: translateY(10px);
+    }
+}
+    
 @media (max-width: 768px)  {
-    .cuerpo{
-        background: linear-gradient(to bottom, #ffdd7d, #000000);
+     .cuerpo{
+        background: linear-gradient(to bottom, #a2a19e, #7f4e00);
+    }
+
+    .contenedor section{
+    margin: 0px;
+    height: 0%;
+    display:inline;
+    }
+
+    .cabeza{
+        background: #f2d7d7;
+    }
+
+    .navegador{
+        background: #dfc885;
+    }
+
+    .titulo211{
+        transform: translateY(0);
+    }
+
+    .titulo31{
+        transform: translateY(0);
+    }
+
+    .parrafo1{
+        transform: translateY(0);
+    }
+/*------------------------------------------------------------*/
+
+    .contenedor2 form{
+        display: inline;
+        border:none;
+    }
+
+    .ele-33{
+        transform: translateY(0px);
+    }
+    .ele-34{
+        transform: translateY(0px);
+    }
+
+    /*------------------------------------------------------------*/
+
+    .contenedor1{
+    margin: 1px;
+    height: 40%;
+    display: inline;
+    border: none;
     }
     
+    
+
+    #perfil{
+    margin:-1px;
+    padding:2px;
+    background: #fbd496;
+    }
+
+
+
+    #clave{
+    margin:-1px;
+    padding:var(--padding-valu1);
+    background: #fbd496;
+    }
+
+    .ele-22{
+        transform: translateY(20px);
+    }
+
+    .ele-23{
+        transform: translateY(20px);
+    }
+
+    .ele-24{
+        transform: translateY(20px);
+    }
+
+    .ele-25{
+        transform: translateY(20px);
+    }
+
+    .ele-26{
+        transform: translateY(-20px);
+    }
+
+    .ele-27{
+        transform: translateY(-20px);
+    }
+
+    .ele-28{
+        transform: translateY(-20px);
+    }
+
+    .ele-29{
+        transform: translateY(-20px);
+    }
+
+    .botonCualquiera2{
+        transform: translateY(10px);
+    }
+
 }
 
-@media (max-width: 668px)  {
-    .cuerpo{
-        background: linear-gradient(to bottom, #ffdd7d, #ff0000);
+@media (max-width: 576px)  {
+     .cuerpo{
+        background: linear-gradient(to bottom, #e38686, #7f4e00);
     }
-    
-}
 
-@media (max-width: 568px)  {
-   .cuerpo{
-        background: linear-gradient(to bottom, #ffdd7d, #0026ff);
-    }
-    
-}
 
-@media (max-width: 400px)  {
-   .cuerpo{
-        background: linear-gradient(to bottom, #ffdd7d, #8effaa);
+    .cabeza{
+        background: #e70000;
+    }
+
+    .navegador{
+        background: #a2a19e;
+    }
+
+    .contenedor section{
+    margin: 0px;
+    height: 0%;
+    display:inline;
+    }
+
+    .titulo211{
+        transform: translateY(0);
+    }
+
+    .titulo31{
+        transform: translateY(0);
+    }
+
+    .parrafo1{
+        transform: translateY(0);
+    }
+
+    /*------------------------------------------------------------*/
+
+    .contenedor2 form{
+        display: inline;
+        border:none;
+    }
+
+    .ele-33{
+        transform: translateY(0px);
+    }
+    .ele-34{
+        transform: translateY(0px);
+    }
+
+    .formularioBusqueda{
+        align-items: center;
+    }
+
+    /*------------------------------------------------------------*/
+
+    .contenedor1{
+    margin: 1px;
+    height: 40%;
+    display: inline;
+    border: none;
     }
     
+    
+
+    #perfil{
+    margin:-1px;
+    padding:2px;
+    background: #fbd496;
+    }
+
+
+
+    #clave{
+    margin:-1px;
+    padding:var(--padding-valu1);
+    background: #fbd496;
+    }
+
+    .ele-22{
+        transform: translateY(20px);
+    }
+
+    .ele-23{
+        transform: translateY(20px);
+    }
+
+    .ele-24{
+        transform: translateY(20px);
+    }
+
+    .ele-25{
+        transform: translateY(20px);
+    }
+
+    .ele-26{
+        transform: translateY(-20px);
+    }
+
+    .ele-27{
+        transform: translateY(-20px);
+    }
+
+    .ele-28{
+        transform: translateY(-20px);
+    }
+
+    .ele-29{
+        transform: translateY(-20px);
+    }
+
+    .botonCualquiera2{
+        transform: translateY(10px);
+    }
 }
 
            
