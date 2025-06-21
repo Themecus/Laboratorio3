@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Mi revista digital </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="formularioBusqueda">
+
+        <nav class="navegador">
+            <div><a href="revista1.html">Inicio</a></div>
+            <div><a href="#noticias">Noticias</a></div>
+            <div><a href="#blog">Blog</a></div>
+            <div><a href="contactos.html">Contactos</a></div>
+            <div><a href="configuracion.html">Configuracion</a></div>
+        </nav>
+
+            <main class="contenedor2 form">
+                <section id="formulariodebusqueda" >
+                     <h1><b>FORMULARIO DE CONTACTO</b></h1>
+                      <p>Coloque sus datos aqui si tiene informacion del golden cachorro de la imagen</p>
+                      <form>
+                        <div class="elemento ele-30">
+                            <label for="nombre">Nombre:</label>
+                            <input 
+                            type="text"
+                            id="nombre"
+                            placeholder="Nombre"
+                            value=""
+                            required
+                            >
+                        </div>
+
+                        <div class="elemento ele-31">
+                            <label for="correo">Correo:</label>
+                            <input 
+                            type="text"
+                            id="correo"
+                            placeholder="nombre123@gmail.com"
+                            value=""
+                            required
+                            >
+
+                        </div>
+
+                        <div class="elemento ele-32">
+                            <label for="informacion">Informacion:</label>
+                            <select id="informacion" name="informacion">
+                            <option value="lo encontre cerca del parque">Lo encontre cerca del parque</optionva>
+                            <option value="lo encontre cerca del edificio marron">Lo encontre cerca del edificio marron</option>
+                            <option value="por la policia">Por la policia</option>
+                            <option value="encontre pistas de el">Encontre pistas de el</option>
+                            </select>
+                        </div>
+
+                        <div class="elemento ele-33">
+                            <label for="informacion ex">Informacion extra:</label>
+                            <textarea
+                                id="informacion ex"
+                                name="informacion ex"
+                                rows="4"
+                                cols="50"
+                                placeholder="Si sabes algo ma escribir aqui"
+                            ></textarea>
+
+                        </div>
+
+                        <div class="elemento ele-34">
+                            <button class="botonCualquiera1">Enviar datos</button>
+                        </div>
+
+                      </form>
+
+
+
+                 </section>
+            </main>
+        
+
+        <button class="botonChat">CHAT</button>
+    </body>
+</html>
