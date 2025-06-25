@@ -1,0 +1,195 @@
+
+
+.formularioBusqueda {
+    background: rgb(235, 152, 84);
+    margin: var(--magin-value1);
+    padding: var(--padding-value);
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(41, 252, 142);
+    margin: var(--magin-value1);
+    padding: var(--padding-value);
+}
+
+.contenedor2 form {
+    margin: 2px;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: var(--location-text);
+}
+
+#formulariodebusqueda section {
+    background-color: rgb(249, 229, 173);
+    border: var(--size-style-color-border3);
+    font-weight: 400;
+    color: var(--color-black);
+    text-shadow: var(--style-shadow);
+    margin: var(--magin-value1);
+    padding: var(--padding-value);
+}
+
+#formulariodebusqueda h1 {
+    margin: var(--magin-value1);
+    padding: var(--padding-value);
+}
+
+#formulariodebusqueda p {
+    margin: var(--magin-value1);
+    padding: var(--padding-value);
+}
+
+#formulariodebusqueda form {
+    margin: var(--magin-value1);
+    padding: var(--padding-value);
+    border: var(--size-style-color-border3);
+}
+
+.elemento {
+    text-align: var(--location-text);
+}
+
+.ele-30 {
+    color: var(--color-black);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: var(--magin-value);
+    padding: var(--padding-value);
+}
+
+.ele-31 {
+    color: var(--color-black);
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: var(--magin-value);
+    padding: var(--padding-value);
+}
+
+.ele-32 {
+    color: var(--color-black);
+    grid-column: 2/6;
+    grid-row: 1/2;
+    margin: var(--magin-value);
+    padding: var(--padding-value);
+}
+
+.ele-33 {
+    color: var(--color-black);
+    grid-column: 3/5;
+    grid-row: 2/3;
+    margin: var(--magin-value);
+    padding: var(--padding-value);
+    transform: translateY(-40px);
+}
+
+.ele-34 {
+    color: var(--color-black);
+    grid-column: 6/8;
+    grid-row: 1/3;
+    margin: var(--magin-value);
+    padding: var(--padding-value);
+    transform: translateY(70px);
+    scale: 2;
+}
+
+.botonCualquiera1 {
+    cursor: var(--mouse-style);
+    background-color: var(--color-yellow);
+}
+
+.botonChat {
+    background-color: rgb(126, 107, 70);
+    color: var(--color-white-words);
+    position: fixed;
+    left: 90%;
+    width: 100px;
+    height: 50px;
+    bottom: 0px;
+    transition: background 0.5s ease;
+}
+
+.botonChat:hover {
+    background: var(--color-yellow);
+}
+
+button:hover {
+    color: var(--color-yellow);
+    border-color: rgb(160, 88, 0);
+}
+
+button:focus {
+    color: var(--color-yellow);
+    cursor: var(--mouse-style);
+}
+
+input:hover {
+    border-color: var(--color-brown);
+}
+
+input:focus {
+    border-color: var(--color-brown);
+}
+
+textarea:hover {
+    border-color: var(--color-brown);
+}
+
+textarea:focus {
+    border-color: var(--color-brown);
+}
+
+:root {
+    --size-style-color-border3: 2px solid #000;
+    --color-brown: rgb(160, 88, 0);
+    --color-yellow: rgb(255, 174, 0);
+    --color-black: rgb(0, 0, 0);
+    --color-white-words: rgb(255, 255, 255);
+    --magin-value: 10px;
+    --magin-value1: 1px;
+    --padding-value: 10px;
+    --location-text: center;
+    --style-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    --mouse-style: pointer;
+}
+
+/* Estilos para el mensaje de respuesta */
+#responseMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 950px) {
+    .contenedor2 form {
+        display: inline;
+        border: none;
+    }
+    
+    .ele-33 {
+        transform: translateY(0px);
+    }
+    
+    .ele-34 {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .formularioBusqueda {
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .formularioBusqueda {
+        background: rgb(235, 152, 84);
+    }
+}

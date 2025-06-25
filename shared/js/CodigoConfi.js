@@ -1,5 +1,5 @@
 document.getElementById('guardarBtn').addEventListener('click', function() {
-    // Recoger datos del formulario
+    
     const formData = {
         nombre: document.getElementById('nombreUsuario').value,
         fechaNacimiento: document.getElementById('nacimiento').value,
@@ -11,11 +11,11 @@ document.getElementById('guardarBtn').addEventListener('click', function() {
         fechaRegistro: new Date().toLocaleString()
     };
 
-    // Guardar en localStorage
+   
     const registros = JSON.parse(localStorage.getItem('registrosUsuarios') || '[]');
     registros.push(formData);
     localStorage.setItem('registrosUsuarios', JSON.stringify(registros));
 
-    // Opcional: Mostrar mensaje de éxito (sin alterar el diseño)
+    
     alert('Datos guardados correctamente en localStorage');
 });
