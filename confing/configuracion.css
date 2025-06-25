@@ -226,6 +226,25 @@ td:hover {
     transform: scale(1.20);
 }
 
+.navbar-custom {
+    background-color: rgb(219, 214, 67);
+}
+
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(34, 0, 255);
+}
+
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--color-black)
+}
+
+
+.navbar-custom .navbar-toggler {
+    border-color: var(--color-black)
+}
+
 :root {
     --size-style-color-border2: 4px groove black;
     --color-brown: rgb(160, 88, 0);
