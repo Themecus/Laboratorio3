@@ -245,6 +245,21 @@ td:hover {
     border-color: var(--color-black)
 }
 
+ .form-section {
+    background-color:var(--color-yellow);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.table-responsive {
+    margin-top: 20px;
+}
+.botonChat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 :root {
     --size-style-color-border2: 4px groove black;
     --color-brown: rgb(160, 88, 0);
