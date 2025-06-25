@@ -676,7 +676,6 @@ td{
     grid-row:1/2;
     margin: var(--magin-value);
     padding:var(--padding-value);
-    transform: translateX(60px);
     
 }
 .ele-33{

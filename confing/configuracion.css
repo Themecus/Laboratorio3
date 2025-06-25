@@ -254,11 +254,6 @@ td:hover {
 .table-responsive {
     margin-top: 20px;
 }
-.botonChat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
 
 :root {
     --size-style-color-border2: 4px groove black;
