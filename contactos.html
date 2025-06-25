@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8"> 
-        <title>Mi revista digital </title>
+        <title>Mi revista digital</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/CodigoContactos.js" defer></script>
     </head>
     <body class="formularioBusqueda">
 
@@ -16,68 +17,65 @@
             <div><a href="configuracion.html">Configuracion</a></div>
         </nav>
 
-            <main class="contenedor2 form">
-                <section id="formulariodebusqueda" >
-                     <h1><b>FORMULARIO DE CONTACTO</b></h1>
-                      <p>Coloque sus datos aqui si tiene informacion del golden cachorro de la imagen</p>
-                      <form>
-                        <div class="elemento ele-30">
-                            <label for="nombre">Nombre:</label>
-                            <input 
-                            type="text"
-                            id="nombre"
-                            placeholder="Nombre"
-                            value=""
-                            required
-                            >
-                        </div>
+        <main class="contenedor2 form">
+            <section id="formulariodebusqueda">
+                <h1><b>FORMULARIO DE CONTACTO</b></h1>
+                <p>Coloque sus datos aqui si tiene informacion del golden cachorro de la imagen</p>
+                <form id="contactForm">
+                    <div class="elemento ele-30">
+                        <label for="nombre">Nombre:</label>
+                        <input 
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Nombre"
+                        value=""
+                        required
+                        >
+                    </div>
 
-                        <div class="elemento ele-31">
-                            <label for="correo">Correo:</label>
-                            <input 
-                            type="text"
-                            id="correo"
-                            placeholder="nombre123@gmail.com"
-                            value=""
-                            required
-                            >
+                    <div class="elemento ele-31">
+                        <label for="correo">Correo:</label>
+                        <input 
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="nombre123@gmail.com"
+                        value=""
+                        pattern="[a-zA-Z0-9._%+-]+@gmail\.com$"
+                        title="Por favor ingrese un correo de Gmail válido (ejemplo: usuario@gmail.com)"
+                        required
+                        >
+                    </div>
 
-                        </div>
+                    <div class="elemento ele-32">
+                        <label for="informacion">Informacion:</label>
+                        <select id="informacion" name="informacion">
+                        <option value="lo encontre cerca del parque">Lo encontre cerca del parque</option>
+                        <option value="lo encontre cerca del edificio marron">Lo encontre cerca del edificio marron</option>
+                        <option value="por la policia">Por la policia</option>
+                        <option value="encontre pistas de el">Encontre pistas de el</option>
+                        </select>
+                    </div>
 
-                        <div class="elemento ele-32">
-                            <label for="informacion">Informacion:</label>
-                            <select id="informacion" name="informacion">
-                            <option value="lo encontre cerca del parque">Lo encontre cerca del parque</optionva>
-                            <option value="lo encontre cerca del edificio marron">Lo encontre cerca del edificio marron</option>
-                            <option value="por la policia">Por la policia</option>
-                            <option value="encontre pistas de el">Encontre pistas de el</option>
-                            </select>
-                        </div>
+                    <div class="elemento ele-33">
+                        <label for="informacion-ex">Informacion extra:</label>
+                        <textarea
+                            id="informacion-ex"
+                            name="informacion-ex"
+                            rows="4"
+                            cols="50"
+                            placeholder="Si sabes algo mas escribir aqui"
+                        ></textarea>
+                    </div>
 
-                        <div class="elemento ele-33">
-                            <label for="informacion ex">Informacion extra:</label>
-                            <textarea
-                                id="informacion ex"
-                                name="informacion ex"
-                                rows="4"
-                                cols="50"
-                                placeholder="Si sabes algo ma escribir aqui"
-                            ></textarea>
-
-                        </div>
-
-                        <div class="elemento ele-34">
-                            <button class="botonCualquiera1">Enviar datos</button>
-                        </div>
-
-                      </form>
-
-
-
-                 </section>
-            </main>
-        
-
+                    <div class="elemento ele-34">
+                        <button type="submit" class="botonCualquiera1">Enviar datos</button>
+                    </div>
+                </form>
+                <div id="responseMessage" style="display: none; margin-top: 20px; padding: 10px; background-color: #d4edda; color: #155724; border-radius: 5px;"></div>
+            </section>
+        </main>
         <button class="botonChat">CHAT</button>
     </body>
 </html>
