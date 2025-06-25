@@ -4,9 +4,7 @@
         <meta charset="UTF-8"> 
         <title>Mi revista digital</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Estilos personalizados -->
         <link rel="stylesheet" href="../shared/css/style.css">
         <link rel="stylesheet" href="contactos.css">
         <script src="../shared/js/CodigoContactos.js" defer></script>
@@ -99,9 +97,31 @@
                 <div id="responseMessage" style="display: none; margin-top: 20px; padding: 10px; background-color: #d4edda; color: #155724; border-radius: 5px;"></div>
             </section>
         </main>
-        <button class="botonChat">CHAT</button>
         
-        <!-- Bootstrap JS Bundle with Popper -->
+        <button type="button" class="botonChat" data-bs-toggle="modal" data-bs-target="#chatModal">
+            CHAT
+        </button>
+
+        
+        <section class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="chatModalLabel">Chat de la Revista</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="fs-4">🚧 En construcción 🚧</p>
+                        <p>Estamos trabajando para brindarte esta funcionalidad pronto.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
