@@ -1,0 +1,18 @@
+.navbar-custom {
+    background-color: rgb(242, 178, 0);
+}
+
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(34, 0, 255);
+}
+
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--color-black)
+}
+
+
+.navbar-custom .navbar-toggler {
+    border-color: var(--color-black)
+}

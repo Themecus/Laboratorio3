@@ -140,6 +140,26 @@ textarea:focus {
     border-color: var(--color-brown);
 }
 
+.navbar-custom {
+    background-color: rgb(242, 178, 0);
+}
+
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgb(34, 0, 255);
+}
+
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: var(--color-black)
+}
+
+
+.navbar-custom .navbar-toggler {
+    border-color: var(--color-black)
+}
+
+
 :root {
     --size-style-color-border3: 2px solid #000;
     --color-brown: rgb(160, 88, 0);
@@ -154,7 +174,7 @@ textarea:focus {
     --mouse-style: pointer;
 }
 
-/* Estilos para el mensaje de respuesta */
+
 #responseMessage {
     display: none;
     margin-top: 20px;

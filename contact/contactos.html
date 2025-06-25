@@ -4,18 +4,40 @@
         <meta charset="UTF-8"> 
         <title>Mi revista digital</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Estilos personalizados -->
         <link rel="stylesheet" href="../shared/css/style.css">
         <link rel="stylesheet" href="contactos.css">
         <script src="../shared/js/CodigoContactos.js" defer></script>
     </head>
     <body class="formularioBusqueda">
-
-        <nav class="navegador">
-                <div><a href="..\revista1.html">Inicio</a></div>
-                <div><a href="#noticias">Noticias</a></div>
-                <div><a href="#blog">Blog</a></div>
-                <div><a href="contactos.html">Contactos</a></div>
-                <div><a href="..\confing\configuracion.html">Configuracion</a></div>
+       
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="..\revista1.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="..\confing\configuracion.html">Configuracion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <main class="contenedor2 form">
@@ -78,5 +100,8 @@
             </section>
         </main>
         <button class="botonChat">CHAT</button>
+        
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
