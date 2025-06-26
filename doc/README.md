@@ -5,7 +5,7 @@ Este es una revista virtual que publicara cada inicio de semanas noticias de int
 No se usaron tecnologias mas alla de Bootstrap (Barra de navegacion y detalles visuales) y la extension de VSCODE Live Server (activar el servidor para la prueba de esta pagina)
 
 Para ejecutar la pagina todo lo que se debe hacer es usar la extension de VSCODE
-llamada "Live Server", esto activara cada html para su exploracion usando el el nav para esto
+llamada "Live Server", esto activara cada html para su exploracion usando el nav bar para esto
 
 Las carpetas se distribuyeron forma dada por el profesor, sin embargo por comodidad y mantener cierto ritmo, no se cambio el nombre de ninguna archivo, solo se modifico sus rutas y poco mas
 
